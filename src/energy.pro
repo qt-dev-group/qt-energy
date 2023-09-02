@@ -1,6 +1,6 @@
 TEMPLATE = subdirs
 
-SUBDIRS  =  \
+SUBDIRS  = 	\
                         common/demo1 \
 			common/demo2 \
 			tools/demo3 \
