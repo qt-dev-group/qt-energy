@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "csitemanager.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,8 +16,12 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    Q_INVOKABLE void test();
+
+private slots:
+    void on_siteManagerBtn_clicked();
+
 private:
     Ui::MainWindow *ui;
+    CSiteManager *m_pSiteManager;
 };
 #endif // MAINWINDOW_H

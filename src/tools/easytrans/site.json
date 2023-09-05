@@ -1,0 +1,24 @@
+{
+    "ftp-sites":[
+        {
+            "siteName":"Site 1",
+            "ipv4addr":"172.20.114.51",
+            "port":21,
+            "protocol":0,
+            "loginMode":1,
+            "username":"user1",
+            "password":"passwd1",
+            "comment":"this is a comment"
+        },
+        {
+            "siteName":"Site 2",
+            "ipv4addr":"172.20.114.52",
+            "port":21,
+            "protocol":1,
+            "loginMode":0,
+            "username":"user2",
+            "password":"passwd3",
+            "comment":"this is a comment"
+        }
+    ]
+}
