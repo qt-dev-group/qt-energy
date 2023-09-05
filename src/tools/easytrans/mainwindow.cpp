@@ -1,25 +1,26 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QMetaObject>
-#include <QDebug>
-#include <QMetaMethod>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QMetaMethod  qm = this->metaObject()->method(2);
-    qDebug()<<qm.name();
+    m_pSiteManager = NULL;
 
 }
 
-void MainWindow::test()
-{
-    qDebug()<<"this is a test";
-}
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+
+void MainWindow::on_siteManagerBtn_clicked()
+{
+    if(!m_pSiteManager)
+        m_pSiteManager = new CSiteManager(this);
+
+    m_pSiteManager->show();
 }
 
