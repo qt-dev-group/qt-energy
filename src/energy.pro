@@ -1,7 +1,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS  =  \
-                        common/demo1 \
+                        common/todolist \
 			common/demo2 \
 			tools/demo3 \
 			tools/demo4 \

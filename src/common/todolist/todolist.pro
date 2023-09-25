@@ -12,15 +12,19 @@ INCLUDEPATH += include
 
 SOURCES += \
     source/main.cpp \
-    source/mainwindow.cpp
+    source/todolistmdlg.cpp \
 
 HEADERS += \
-    include/mainwindow.h
+    include/todolistmdlg.h \
 
 FORMS += \
-    ui/mainwindow.ui
+    ui/todolistmdlg.ui \
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    icons.qrc

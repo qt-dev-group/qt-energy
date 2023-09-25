@@ -15,6 +15,7 @@ CSiteManager::CSiteManager(QWidget *parent) :
     m_pSiteListViewModel = new QStandardItemModel(this);
 
     updateSiteInfo();
+    //connect(this, SIGNAL(ui->siteListView->clicked()), this, SLOT(onClickListItem()) )
 }
 
 CSiteManager::~CSiteManager()
